@@ -1,0 +1,2 @@
+default:
+	g++ ../source/main.cpp ../source/snake.cpp ../source/entity.cpp  -o Snake.exe -static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive -O2 -Wall -Wno-missing-braces -I ../include/ -L ../lib/ -lraylib -lopengl32 -lgdi32 -lwinmm 
